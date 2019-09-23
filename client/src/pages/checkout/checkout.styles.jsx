@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutPageContainer = styled.div`
   width: 55%;
@@ -20,11 +20,21 @@ export const CheckoutHeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid darkgrey;
+
+  @media screen and (max-width: 800px) {
+    width: 135%;
+  }
 `;
 
 export const HeaderBlockContainer = styled.div`
   text-transform: capitalize;
   width: 23%;
+
+  @media screen and (max-width: 800px) {
+    margin-right: 12px;
+    &:last-child {
+      width: 8%;
+  }
 
   &:last-child {
     width: 8%;

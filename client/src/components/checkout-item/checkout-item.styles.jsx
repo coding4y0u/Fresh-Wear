@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutItemContainer = styled.div`
   width: 100%;
@@ -8,6 +8,10 @@ export const CheckoutItemContainer = styled.div`
   padding: 15px 0;
   font-size: 20px;
   align-items: center;
+
+  @media screen and (max-width: 800px) {
+    width: 136%;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -33,6 +37,10 @@ export const QuantityContainer = styled(TextContainer)`
 
   div {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 800px) {
+    margin-right: 8px;
   }
 `;
 
